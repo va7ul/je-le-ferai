@@ -15,11 +15,11 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./mobile-menu.css');
-@import url('./buy-now.css');
-@import url('./popup-thx.css');
-@import url('./reviews-modal.css');
-@import url('./popup-review.css');
-@import url('./subscribe-moda.css');
+@import url('./buy_now_modal.css');
+@import url('./popup_thx.css');
+@import url('./reviews_modal.css');
+@import url('./popup_review.css');
+@import url('./subscribe_modal.css');
 
 
 :root {
