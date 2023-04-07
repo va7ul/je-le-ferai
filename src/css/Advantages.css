@@ -1,0 +1,72 @@
+/*----------------Section Advantages-------------------*/
+.advan {
+  width: 1100px;
+  height: 244px;
+  padding: 50px;
+  background-color: #1E1823;
+  margin-bottom: 128px;
+}
+
+.advan_container {
+  margin-left: 0;
+}
+
+.advan_list {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.advan_item {
+  max-width: 308px;
+}
+
+.advan_icon_item {
+  width: 32px;
+  height: 32px;
+}
+
+.advan_icon {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+
+.advan-header {
+  width: 173px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.advan-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.advan_item:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.vertical_line {
+  width: 124px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(90deg);
+  display: inline-block;
+  margin-left: 244px;
+  padding-left: 18px;
+}
