@@ -1,5 +1,4 @@
 /*----------------Section Hero-------------------*/
-
 .hero_header {
 	font-style: normal;
 	font-weight: 500;
@@ -24,7 +23,7 @@
 	margin-right: 32px;
 	text-align: left;
 	background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
-		url("/img/chocolate-covered-2x-opt.jpg");
+		url("/img/bg-desktop@1x.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -83,7 +82,7 @@
 	display: flex;
 }
 
-.scroll {
+.scroll_button {
 	font-size: 14px;
 	letter-spacing: -0.03em;
 	color: #FFFFFF;
@@ -91,14 +90,23 @@
 	padding-right: 14px;
 }
 
-.scroll_down {
+.scroll {
 	display: flex;
 	align-items: center;
+}
+
+.scroll_span {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #e7e9fc;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .scroll_icon {
 	width: 22px;
 	height: 22px;
-	border-radius: 50%;
-	background-color: #e7e9fc;
+
 }
