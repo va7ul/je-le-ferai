@@ -1,1 +1,82 @@
-
+.containerr{
+    max-width: 1136px;
+  margin: auto;
+  }
+  .comment{
+  
+  }
+  .comment-title{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 50px;
+  }
+  .chocolate{
+    color: var(--orange);
+  }
+  .comment-list{
+    overflow: auto;
+    display: flex;
+  
+    gap: 28px;
+  }
+  .comment-item{
+  }
+  
+  .avatar-img{
+    margin: 0 auto;
+    transform: translateY(50%);
+    display: block;
+    background-color: var(--orange);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .name-comment-container{
+    padding-top: 56px;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 360px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    border-radius: 15px;
+  }
+  .name-comment-title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;    
+  
+    color: #111111;
+  }
+  .comment-text {
+  max-width: 312px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  }
+  .reviews-button{
+    margin: 50px auto 0;
+    display: block;
+    padding: 14px 40px; 
+    width: 222px;
+    height: 50px;
+    border: 1px solid #FD9222;
+    border-radius: 100px;
+    background-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #111111;
+  }
