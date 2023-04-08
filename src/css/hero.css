@@ -4,7 +4,6 @@
 	font-weight: 500;
 	font-size: 28px;
 	line-height: 1.21;
-	letter-spacing: -0.03em;
 	width: 484px;
 	height: 102px;
 	color: var(--white);
@@ -14,7 +13,6 @@
 .hero {
 	padding-top: 381px;
 	padding-bottom: 40px;
-
 	display: flex;
 	text-align: center;
 	max-width: 1136px;
@@ -110,3 +108,5 @@
 	height: 22px;
 
 }
+
+/*--------Mobile------------------*/
