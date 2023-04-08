@@ -5,6 +5,7 @@
   |============================
 */
 
+@import url('./modern-normalize.css');
 @import url('./base.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
@@ -12,15 +13,17 @@
 @import url('./advantages.css');
 @import url('./unique_components.css');
 @import url('./how_made.css');
+@import url('./our_products.css');
 @import url('./top_sellers.css');
 @import url('./reviews.css');
 @import url('./subscribe.css');
+@import url('./footer.css');
 @import url('./mobile-menu.css');
-@import url('./buy-now.css');
-@import url('./popup-thx.css');
-@import url('./reviews-modal.css');
-@import url('./popup-review.css');
-@import url('./subscribe-moda.css');
+@import url('./buy_now_modal.css');
+@import url('./popup_thx.css');
+@import url('./reviews_modal.css');
+@import url('./popup_review.css');
+@import url('./subscribe_modal.css');
 
 
 :root {
