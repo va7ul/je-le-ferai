@@ -11,7 +11,8 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-  />
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/styles.css" >
 
 </head>
@@ -19,8 +20,9 @@
 <!--======================chocolate is loved (Misha-Kohut)======================-->
 <section class="comment containerr">
   <h2 class="comment-title"><span class="chocolate">chocolate</span> is loved</h2>
-  <ul class="comment-list">
-    <li class="comment-item">
+  <div class="swiper mySwiper">
+  <ul class="comment-list swiper-wrapper">
+    <li class="comment-item swiper-slide">
       <img src="../img/avatar-1-victoria-dobrzhanska@1x.png" alt="" class="avatar-img" />
       <div class="name-comment-container">
       <h3 class="name-comment-title">Victoria Dobrzhanska</h3>
@@ -30,7 +32,7 @@
       </p>
     </div>
     </li>
-    <li class="comment-item">
+    <li class="comment-item swiper-slide">
       <img src="../img/avatar-2-nazar-babenko@1x.png" alt="" class="avatar-img"/>
       <div class="name-comment-container">
       <h3 class="name-comment-title">Nazar Babenko</h3>
@@ -40,7 +42,7 @@
       </p>
     </div>
     </li>
-    <li class="comment-item">
+    <li class="comment-item swiper-slide">
       <img src="../img/avatar-3-olena-kampusch@1x.png" alt="" class="avatar-img"/>
       <div class="name-comment-container">
       <h3 class="name-comment-title">Olena Kampusch</h3>
@@ -50,7 +52,7 @@
       </p>
     </div>
     </li>
-    <li class="comment-item">
+    <li class="comment-item swiper-slide">
       <img src="../img/avatar-4-natalia-sus@1x.png" alt="" class="avatar-img"/>
       <div class="name-comment-container">
       <h3 class="name-comment-title">Natalia Sus</h3>
@@ -60,7 +62,7 @@
       </p>
       </div>
     </li>
-    <li class="comment-item">
+    <li class="comment-item swiper-slide">
       <img src="../img/avatar-5-danilo-nottingham@1x.png" alt="" class="avatar-img"/>
       <div class="name-comment-container">
       <h3 class="name-comment-title">Danilo Nottingham</h3>
@@ -71,7 +73,7 @@
       </p>
       </div>
     </li>
-    <li class="comment-item">
+    <li class="comment-item swiper-slide">
 
       <img src="../img/avatar-6-irina-tydnyuk@1x.png" alt="" class="avatar-img"/>
             <div class="name-comment-container">
@@ -84,8 +86,17 @@
     </li>
 
   </ul>
+  <div class="swiper-pagination"></div>
+</div>
   <button type="button" class="reviews-button">Leave a review</button>
 </section>
 <!--======================/chocolate is loved======================-->
+<!--======================/chocolate is loved======================-->
+
+
+
+<!--======================/chocolate is loved======================-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/swiper-script.js"></script>
 </body>
 </html>

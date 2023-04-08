@@ -3,7 +3,7 @@
   margin: auto;
   }
   .comment{
-  
+  padding-bottom: 128px;
   }
   .comment-title{
   font-weight: 600;
@@ -19,12 +19,11 @@
     color: var(--orange);
   }
   .comment-list{
-    overflow: auto;
     display: flex;
-  
-    gap: 28px;
+
   }
   .comment-item{
+
   }
   
   .avatar-img{
@@ -79,4 +78,18 @@
   line-height: 22px;
   /* identical to box height */
   color: #111111;
+  }
+
+  .swiper {
+
+  }
+  .swiper-wrapper{
+
+
+  }
+  .swiper-slide {
+
+  }
+
+  .swiper-slide img {
   }
