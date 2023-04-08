@@ -1,0 +1,57 @@
+.top-sellers-section {
+  background-color: var(--background);
+}
+
+.top-sellers-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  padding-top: 72px;
+  margin-bottom: 32px;
+}
+.top-sellers-title-partone {
+  color: var(--orange);
+}
+
+.top-sellers-img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.topsellers-photo-list {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.topsellers-photo-list-item-one {
+  margin-bottom: 32px;
+}
+
+.top-sellers-descr {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  max-width: 306px;
+  color: var(--black);
+}
+
+.buy-now-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 41px;
+  background: var(--orange);
+  border-radius: 100px;
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+@media screen and (min-width: 768px) {
+}
