@@ -1,0 +1,244 @@
+.how-its-made {
+  padding-top: 72px;
+  /* padding-bottom: 72px; */
+}
+
+.how-its-made > .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  max-width: 335px;
+}
+
+.how-its-made-title {
+  font-family: 'Montserrat';
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.how-its-made-video {
+  position: relative;
+}
+
+.how-its-made-play {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.how-its-made-svg {
+  height: 35px;
+  fill: white;
+}
+
+.how-its-made-video img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(pastry-chef-preparing-chocolate-cake.jpg);
+  border-radius: 15px;
+}
+
+.how-its-made-title span {
+  color: var(--orange);
+}
+.how-its-made-container {
+  margin-top: 20px;
+}
+
+.how-its-made-description {
+  font-family: 'Montserrat';
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  /* самостоятельно увеличил font-size с 18 для соответствия с макетом */
+  line-height: 1.3;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.how-its-made-container {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 20px 14px;
+}
+
+.how-its-made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.how-its-made-item {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  /* самостоятельно увеличил font-size с 14 для соответствия с макетом */
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  color: var(--black);
+  padding-left: 30px;
+  position: relative;
+}
+
+.how-its-made-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: black;
+  color: orange;
+  top: 5px;
+  left: 0;
+  background: #4c4c4c;
+  border: 1px solid #eceded;
+  border-radius: 50%;
+}
+
+/* -------------------mobile-------------------- */
+
+@media screen and (min-width: 375px) {
+}
+
+/* -------------------/mobile-------------------- */
+
+/* -------------------tablet-------------------- */
+
+@media screen and (min-width: 768px) {
+  .how-its-made {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+  }
+  .how-its-made > .container {
+    max-width: 768px;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .how-its-made-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    margin-bottom: 50px;
+  }
+
+  .how-its-made-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    width: 350px;
+  }
+
+  .how-its-made-container {
+    padding: 32px;
+    font-weight: 600;
+    line-height: calc(24 / 22);
+  }
+
+  .how-its-made-item {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+  }
+
+  .how-its-made-list {
+    width: 501px;
+  }
+
+  .how-its-made-play {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* -------------------/tablet-------------------- */
+
+/* -------------------desktop-------------------- */
+
+@media screen and (min-width: 1200px) {
+  .how-its-made {
+    padding-top: 128px;
+    /* padding-bottom: 128px; */
+  }
+
+  .how-its-made > .container {
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .how-its-made-video {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .how-its-made-list {
+    gap: 24px;
+  }
+
+  .how-its-made-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* width: 1136px; */
+  }
+
+  .how-its-made-container {
+    margin: 0;
+    width: 516px;
+  }
+  .how-its-made-video > img {
+    height: 400px;
+  }
+
+  .how-its-made-video {
+    width: 600px;
+  }
+
+  /* .how-its-made-item {
+    font-style: 13px;
+  } */
+
+  .how-its-made-description {
+    width: 350px;
+  }
+
+  .how-its-made-list {
+    width: auto;
+  }
+}
+
+/* -------------------/desktop-------------------- */
+
+/*  - mobile: верстка гумова, стає адаптивною на 375px;
+      - tablet: 768px;
+      - desktop: 1200px 
+  
+  :root {
+    --orange: #fd9222;
+    --pale-yellow: #fcf1e0;
+    --white: #ffffff;
+    --accent-color: #1e1823;
+    --black: #111111;
+  
+    --text: rgba(255, 255, 255, 0.7); 
+  }
+  */

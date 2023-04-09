@@ -1,12 +1,3 @@
-.container {
-  width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 0 auto;
-}
-.link {
-  text-decoration: none;
-}
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
@@ -108,6 +99,12 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .footer-pagination {
     display: flex;
@@ -123,6 +120,7 @@
 }
 
 .footer-logo-first {
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -132,41 +130,72 @@
 
 .footer-subject {
   color: var(--white);
+  letter-spacing: -0.02em;
 }
 
 .footer-text {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.29;
-  letter-spacing: -0.02em;
   color: var(--white);
+  letter-spacing: -0.02em;
 }
 
 .footer-address {
   line-height: 1.29;
-  letter-spacing: -0.02em;
+  font-size: 14px;
   color: var(--white);
   font-style: normal;
   font-weight: 400;
+  letter-spacing: -0.02em;
 }
-
-.footer-media-icon {
-  fill: var(--white);
+.footer-icons-item {
+  width: 24px;
+  height: 24px;
 }
 .footer-list-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-list-link:is(:hover, :focus) {
+  stroke: var(--orange);
+}
+.footer-media-icon {
+  fill: currentColor;
+  stroke: var(--white);
 }
 .footer-media-icon:hover {
-  fill: var(--orange);
+  stroke: var(--orange);
 }
 .footer-anchor-list {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .footer-anchor {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: -0.02em;
   color: var(--white);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-anchor:hover,
+.footer-anchor:focus {
+  color: var(--orange);
+}
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--orange);
+}
+
 @media screen and (max-width: 375px) {
   .footer {
     padding-top: 32px;

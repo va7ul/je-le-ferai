@@ -1,0 +1,141 @@
+.top-sellers-section {
+  background-color: var(--background);
+}
+
+.is-hidden-sellers {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+
+.top-sellers-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+.top-sellers-title-partone {
+  color: var(--orange);
+}
+
+.top-sellers-img {
+  width: 335px;
+  height: 464px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.top-sellers-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.topsellers-photo-list-item-one {
+  margin-bottom: 32px;
+}
+
+.top-sellers-descr {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  max-width: 306px;
+  color: var(--black);
+}
+
+.buy-now-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 41px;
+  background: var(--orange);
+  border-radius: 100px;
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.buy-now-btn:focus {
+  background: var(--pale-yellow);
+  color: var(--orange);
+}
+
+@media screen and (min-width: 375px) {
+  .top-sellers-container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .top-sellers-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .top-sellers-img {
+    width: 344px;
+  }
+
+  .topsellers-photo-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .top-sellers-section {
+    position: relative;
+  }
+
+  .buy-now-btn {
+    position: absolute;
+    transform: translate(583px, -120px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-sellers-container {
+    max-width: 1200px;
+  }
+
+  .is-hidden-sellers {
+    visibility: visible;
+    pointer-events: all;
+    position: static;
+  }
+
+  .top-sellers-img {
+    width: 344px;
+  }
+
+  .topsellers-photo-list {
+    position: relative;
+  }
+
+  .buy-now-btn {
+    transform: translate(979px, -35px);
+  }
+
+  .buy-now-btn:hover {
+    background: var(--pale-yellow);
+    color: var(--orange);
+  }
+
+  .top-sellers-descr {
+    position: absolute;
+    max-width: 407px;
+  }
+}
