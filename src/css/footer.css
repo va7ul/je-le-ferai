@@ -139,6 +139,7 @@
   font-weight: 500;
   line-height: 1.29;
   color: var(--white);
+  letter-spacing: -0.02em;
 }
 
 .footer-address {
@@ -147,30 +148,54 @@
   color: var(--white);
   font-style: normal;
   font-weight: 400;
+  letter-spacing: -0.02em;
 }
-
-.footer-media-icon {
-  fill: currentColor;
+.footer-icons-item {
+  width: 24px;
+  height: 24px;
 }
 .footer-list-link {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-list-link:is(:hover, :focus) {
+  stroke: var(--orange);
+}
+.footer-media-icon {
+  fill: currentColor;
+  stroke: var(--white);
 }
 .footer-media-icon:hover {
-  fill: var(--orange);
+  stroke: var(--orange);
 }
 .footer-anchor-list {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .footer-anchor {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--white);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-anchor:hover,
+.footer-anchor:focus {
+  color: var(--orange);
+}
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--orange);
+}
+
 @media screen and (max-width: 375px) {
   .footer {
     padding-top: 32px;
