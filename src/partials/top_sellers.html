@@ -5,11 +5,36 @@
     </h2>
     <ul class="topsellers-photo-list">
       <li class="topsellers-photo-list-item topsellers-photo-list-item-one">
-        <img
-          class="top-sellers-img"
-          src="img/top-sellers-1-mobile@1x.jpg"
-          alt="Cacao beans"
-        />
+        <picture>
+          <source
+            srcset="
+              img/top-sellers-1-desktop@1x.jpg 1x,
+              img/top-sellers-1-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              img/top-sellers-1-tablet@1x.jpg 1x,
+              img/top-sellers-1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              img/top-sellers-1-mobile@1x.jpg 1x,
+              img/top-sellers-1-mobile@2x.jpg 2x
+            "
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="top-sellers-img"
+            src="img/top-sellers-1-mobile@1x.jpg"
+            alt="Cacao beans"
+          />
+        </picture>
         <p class="top-sellers-descr">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
@@ -17,18 +42,52 @@
         </p>
       </li>
       <li class="topsellers-photo-list-item">
-        <img
-          class="top-sellers-img"
-          src="img/top-sellers-2-mobile@1x.jpg"
-          alt="Chocolate with caramel"
-        />
+        <picture>
+          <source
+            srcset="
+              img/top-sellers-2-desktop@1x.jpg 1x,
+              img/top-sellers-2-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              img/top-sellers-2-tablet@1x.jpg 1x,
+              img/top-sellers-2-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              img/top-sellers-2-mobile@1x.jpg 1x,
+              img/top-sellers-2-mobile@2x.jpg 2x
+            "
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="top-sellers-img"
+            src="img/top-sellers-2-mobile@1x.jpg"
+            alt="Chocolate with caramel"
+          />
+        </picture>
       </li>
-      <li class="topsellers-photo-list-item is-hidden">
-        <img
-          class="top-sellers-img"
-          src="img/top-sellers-3-desktop@1x.jpg"
-          alt="Black chocolate"
-        />
+      <li class="topsellers-photo-list-item is-hidden-sellers">
+        <picture>
+          <source
+            srcset="
+              img/top-sellers-3-desktop@1x.jpg 1x,
+              img/top-sellers-3-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="top-sellers-img"
+            src="img/top-sellers-3-desktop@1x.jpg"
+            alt="Black chocolate"
+          />
+        </picture>
       </li>
     </ul>
 
