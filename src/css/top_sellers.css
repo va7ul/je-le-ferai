@@ -2,6 +2,12 @@
   background-color: var(--background);
 }
 
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+
 .top-sellers-title {
   font-weight: 600;
   font-size: 20px;
@@ -10,7 +16,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--black);
-  padding-top: 72px;
   margin-bottom: 32px;
 }
 .top-sellers-title-partone {
@@ -18,11 +23,16 @@
 }
 
 .top-sellers-img {
+  width: 335px;
+  height: 464px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
-.topsellers-photo-list {
+.top-sellers-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -53,5 +63,68 @@
   line-height: 1.21;
 }
 
+.buy-now-btn:focus {
+  background: var(--pale-yellow);
+  color: var(--orange);
+}
+
+@media screen and (min-width: 375px) {
+  .top-sellers-container {
+    max-width: 375px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .top-sellers-container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .top-sellers-img {
+    width: 344px;
+  }
+
+  .topsellers-photo-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .top-sellers-section {
+    position: relative;
+  }
+
+  .buy-now-btn {
+    position: absolute;
+    transform: translate(565px, -120px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-sellers-container {
+    max-width: 1200px;
+  }
+
+  .is-hidden {
+    visibility: visible;
+    pointer-events: all;
+    position: static;
+  }
+
+  .top-sellers-img {
+    width: 344px;
+  }
+
+  .topsellers-photo-list {
+    position: relative;
+  }
+
+  .buy-now-btn {
+    transform: translate(945px, -35px);
+  }
+
+  .top-sellers-descr {
+    position: absolute;
+    max-width: 407px;
+  }
 }
