@@ -133,10 +133,6 @@
 @media screen and (min-width:320px) and (max-width:768px) {
 	.hero {
 		display: block;
-		/*max-width: 335px;
-		padding-right: 20px;
-		padding-left: 20px;
-		margin-top: 14px;*/
 	}
 
 	.hero_container {
@@ -167,7 +163,6 @@
 	.hero_top {
 		width: 100%;
 		margin-bottom: 32px;
-	
 	}
 
 	.buy_now {
@@ -177,24 +172,19 @@
 		padding: 0;
 		border: none;
 		margin-right: 14px;
-		/*display: flex;
-	align-items: center;
-	width: 120px;
-	height: 41px;*/
 	}
 
 	.how_made {
-		width: 159px; 
+		width: 159px;
 		height: 41px;
 		margin: 0;
 		padding: 0;
-
 	}
 
 	.scroll_button {
-		width: auto;
+	 width: auto;
 		height: auto;
-		margin-right: 12px;
+		/*margin-right: 12px;*/
 	}
 
 	.scroll_span {
@@ -211,11 +201,61 @@
 
 @media screen and (min-width:768px) and (max-width:1199px) {
 	.hero_container {
-		max-width: 768px;
-		padding-right: 32px;
-		padding-left: 32px;
+		max-width: 100%;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+		.hero_top {
+			display: block;
+			width: 100%;
+			
+		}
+
+	.hero_buttons {
+		width: 79px;
+		height: 18px;
+		display: flex;
+		flex-direction: row;
+	}
+
+		.how_made {
+			width: 159px;
+			height: 41px;
+			margin: 0;
+			padding: 0;
+		}
+
+	.buy_now {
+	
+		height: 45px;
+	}
+
+	.scroll {
+		width: 130px;
+	}
+
+	.scroll_button {
+		width: 78px;
+		height: 18px;
+		font-size: 14px;
+	
+		margin: 0;
+	}
+
+	.scroll_span {
+		display: block;
+		width: 38px;
+		
 	}
 
 }
 
-@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1200px) {
+.hero_container {
+		max-width: 100%;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
