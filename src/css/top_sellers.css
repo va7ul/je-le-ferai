@@ -129,6 +129,11 @@
     transform: translate(979px, -35px);
   }
 
+  .buy-now-btn:hover {
+    background: var(--pale-yellow);
+    color: var(--orange);
+  }
+
   .top-sellers-descr {
     position: absolute;
     max-width: 407px;
