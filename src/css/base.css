@@ -28,9 +28,10 @@ a {
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
-  }
+}
 
 img {
   display: block;
@@ -137,7 +138,8 @@ body {
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
-  color: rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17, 0.1);
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
