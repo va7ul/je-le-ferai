@@ -1,7 +1,4 @@
-.containerr{
-    width: 100%;
-    margin: 0 auto;
-  }
+
   .comment{
     width: 100%;
   padding-bottom: 72px;
@@ -17,8 +14,8 @@
   color: #111111;
   margin-bottom: 50px;
   }
-  .chocolate{
-    color: var(--orange);
+  .chocolate-mur{
+   color: var(--orange);
   }
   .comment-list{
     display: flex;
@@ -96,10 +93,13 @@ background-color: var(--orange);
   }
 
   .swiper {
-min-width: auto;
+
   }
   .swiper-wrapper{
-
+height: auto;
+  }
+  .swiper-slide{
+height: 240px;
   }
 
   .mySwiper .swiper-pagination-bullet{
@@ -107,10 +107,6 @@ min-width: auto;
     background-color: var(--orange);
     width: 13px;
     height: 13px;
-
-  }
-.mySwiper .swiper-pagination{
-
 
   }
   .mySwiper .swiper-pagination-bullet{
@@ -150,9 +146,7 @@ min-width: auto;
       margin-top: 36px;
     }
     
-    .swiper-wrapper{
 
-    }
     .swiper-slide{
         max-width: 335px;
       }
