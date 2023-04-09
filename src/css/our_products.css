@@ -64,6 +64,7 @@
     border-radius: 100px;
     padding: 8px 20px;
     margin-top: 18px;
+    cursor: grab;
 }
 
 .our-products-item.swiper-slide {
