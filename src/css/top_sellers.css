@@ -1,8 +1,9 @@
 .top-sellers-section {
   background-color: var(--background);
+  margin-bottom: 72px;
 }
 
-.is-hidden {
+.is-hidden-sellers {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
@@ -79,6 +80,7 @@
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+    margin-bottom: 100px;
   }
 
   .top-sellers-img {
@@ -103,9 +105,10 @@
 @media screen and (min-width: 1200px) {
   .top-sellers-container {
     max-width: 1200px;
+    margin-bottom: 128px;
   }
 
-  .is-hidden {
+  .is-hidden-sellers {
     visibility: visible;
     pointer-events: all;
     position: static;
