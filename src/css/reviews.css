@@ -1,9 +1,9 @@
 
   .comment{
-    width: 100%;
+    width: auto;
     padding-top: 128px;
   padding-bottom: 72px;
-  min-width: 375px;
+
   }
   .comment-title{
   font-weight: 600;
@@ -21,9 +21,11 @@
   .comment-list{
     display: flex;
     height: auto;
+    width: auto;
   }
   
   .comment-item{
+    width: auto;
     padding-top: 40px;
     position: relative;
   }
@@ -44,12 +46,11 @@ margin-right: 28px;
     border-radius: 50%;
   }
   .name-comment-container{
-    width: 100%;
+    width: auto;
     padding-top: 56px;
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
-    width: 100%;
     height: 200px;
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -65,7 +66,7 @@ margin-right: 28px;
     color: #111111;
   }
   .comment-text {
-  max-width: 312px;
+
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -100,7 +101,7 @@ background-color: var(--orange);
 
   }
   .swiper-slide{
-
+width: auto;
   }
 
   .mySwiper .swiper-pagination-bullet{
@@ -125,13 +126,15 @@ background-color: var(--orange);
   
 }
   @media screen and (max-width: 375px ){
-    .containerr{
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-}
+
 .comment-item{
-  width: 100%;
+width: 100%;
+  }
+  .swiper-slide{
+    width: 100%;
+  }
+  .name-comment-container{
+    width: 100%;
   }
 }
   @media screen and (max-width: 767px ) {
