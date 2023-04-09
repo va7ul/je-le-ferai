@@ -106,7 +106,30 @@
 .scroll_icon {
 	width: 22px;
 	height: 22px;
-
+	color: var(--orange);
 }
 
+.scroll_button:hover,
+.scroll_button:focus {
+	background-color: var(--white;)
+	color: var(--orange);
+	
+}
+
+.scroll_icon:hover,
+.scroll_icon:focus {
+	background-color: var(--orange);
+	color: var(--white);
+	/*box-shadow: 0 2px 6px rgba(252, 241, 224, 1);*/
+}
+
+
 /*--------Mobile------------------*/
+
+@media screen and (min-width: 375px) {
+	.components-container {
+		max-width: 335px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
