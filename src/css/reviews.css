@@ -19,7 +19,7 @@
   }
   .comment-list{
     display: flex;
-
+    height: auto;
   }
   
   .comment-item{
@@ -96,7 +96,7 @@ background-color: var(--orange);
 
   }
   .swiper-wrapper{
-height: auto;
+
   }
   .swiper-slide{
 height: 240px;
