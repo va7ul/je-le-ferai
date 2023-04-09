@@ -1,4 +1,6 @@
+/* Our products (Василь Подвірний) */
 .our-products-title {
+    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -79,3 +81,5 @@
         width: 270px;
     }
 }
+
+/* Our products*/
