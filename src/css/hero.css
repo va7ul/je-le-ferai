@@ -4,7 +4,6 @@
 	font-weight: 500;
 	font-size: 28px;
 	line-height: 1.21;
-	letter-spacing: -0.03em;
 	width: 484px;
 	height: 102px;
 	color: var(--white);
@@ -14,7 +13,6 @@
 .hero {
 	padding-top: 381px;
 	padding-bottom: 40px;
-
 	display: flex;
 	text-align: center;
 	max-width: 1136px;
@@ -108,5 +106,32 @@
 .scroll_icon {
 	width: 22px;
 	height: 22px;
+	fill: var(--orange);
+}
 
+.scroll_button:hover,
+.scroll_button:focus {
+	background-color: var(--white);
+	color: var(--orange);
+	
+}
+
+.scroll_span:hover,
+.scroll_span:focus {
+	background-color: var(--orange); 
+}
+.scroll_icon:hover,
+.scroll_icon:focus {
+	fill: var(--white);
+}
+
+
+/*--------Mobile------------------*/
+
+@media screen and (min-width: 375px) {
+	.components-container {
+		max-width: 335px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 }
