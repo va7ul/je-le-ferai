@@ -73,6 +73,7 @@ button {
   --black: #111111;
   --text: rgba(255, 255, 255, 0.7);
   --background: #FAFAFA;
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
