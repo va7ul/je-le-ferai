@@ -11,7 +11,7 @@
     width: 311px;
     padding: 32px 24px;
     position: absolute;
-    background-color: var(--white-color);
+    background-color: var(--white);
     border-radius: 15px;
     top: 50%;
     left: 50%;
@@ -43,7 +43,7 @@
     background-color: inherit;          
   }
   .modal-close-btn-icon {
-    stroke: var(--black-color);
+    stroke: var(--black);
     width: 12px;
     height: 12px;
   }           
@@ -55,7 +55,7 @@
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--black);
     margin-bottom: 32px;
   }
   @media screen and (max-width: 767px)  {
@@ -64,7 +64,7 @@
   }
   }
   .modal-title-mobile > span {
-    color: var(--accent-color);
+    color: var(--orange);
   }  
   
   .modal-form {
@@ -82,7 +82,7 @@
     font-size: 14px;
     line-height: 1.21px;
     letter-spacing: -0.02em;
-    color: var(--black-color);
+    color: var(--black);
   }
   
   
@@ -119,7 +119,7 @@
       font-size: 14px;
       line-height: 1.21;
       letter-spacing: -0.02em;
-      color: var(--black-color);
+      color: var(--black);
     }
     .form-flag {
       display: flex;
@@ -138,7 +138,7 @@
   
   .form-input:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--orange);
   }       
   
   .form-textarea {
@@ -148,12 +148,12 @@
     padding: 14px 18px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 8px;
-    outline: var(--accent-color);
+    outline: var(--orange);
     resize: none;
   }
   .form-textarea:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--orange);
   }
   .form-textarea::placeholder {
     font-weight: 400;
@@ -171,8 +171,8 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    color: var(--white);
+    background-color: var(--orange);
     border-radius: 100px;
     transition: color var(--transition-dur-and-func), background var(--transition-dur-and-func);
   }
@@ -186,8 +186,8 @@
   }
                 
   .form-btn:is(:hover, :focus) {
-    color: var(--accent-color);
-    background-color: var(--button-color);
+    color: var(--orange);
+    background-color: var(--pale-yellow);
    }
   
   /* MODAL-WINDOW TABLET+DESKTOP */
@@ -221,12 +221,12 @@
       line-height: 1.17;
       letter-spacing: -0.03em;
       text-transform: uppercase;
-      color: var(--black-color);
+      color: var(--black);
       margin-bottom: 40px;
     }
      
     .modal-title > span {
-      color: var(--accent-color);
+      color: var(--orange);
     }  
     
     .modal-form {
@@ -279,19 +279,19 @@
     
     .form-input:focus {
       outline: none;
-      border-color: var(--accent-color);
+      border-color: var(--orange);
     }       
     
     .form-textarea {
       min-height: 137px;
       padding: 22px 24px;
       border-radius: 13px;
-      outline: var(--accent-color);
+      outline: var(--orange);
       resize: none;
     }
     .form-textarea:focus {
       outline: none;
-      border-color: var(--accent-color);
+      border-color: var(--orange);
     }
     .form-textarea::placeholder {
       font-size: 18px;
@@ -308,7 +308,7 @@
     }
                   
     .form-btn:is(:hover, :focus) {
-      color: var(--accent-color);
-      background-color: var(--button-color);
+      color: var(--orange);
+      background-color: var(--pale-yellow);
      }
     }
