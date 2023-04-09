@@ -109,19 +109,27 @@ background-color: var(--orange);
 padding: 0;
   }
   .mySwiper .swiper-pagination-bullet{
+    cursor: pointer;
+    background-color: var(--orange);
     width: 13px;
     height: 13px;
-    background: rgba(17, 17, 17, 0.1);
+
 
   }
-  .mySwiper .swiper-pagination-bullet:active,
-  .mySwiper .swiper-pagination-bullet:hover,
-  .mySwiper .swiper-pagination-bullet:focus{
+  .mySwiper .swiper-pagination-bullet:not(:active):not(:first-child)
+  .mySwiper .swiper-pagination-bullet:not(:hover):not(:first-child),
+  .mySwiper .swiper-pagination-bullet:not(:focus){
     width: 13px;
     height: 13px;
-    background: var(--orange);
+    background-color: rgba(17, 17, 17, 0.1);
+
+  
 
   }
+  .swiper-pagination-clickable 
+  .swiper-pagination-bullet {
+    cursor: pointer;
+}
   @media screen and (max-width: 375px ){
     .containerr{
         width: 100%;
