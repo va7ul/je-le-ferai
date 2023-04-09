@@ -117,3 +117,28 @@ body {
     padding-top: 128px;
   }
 }
+
+/* SWIPER */
+.swiper-pagination {
+  position: unset;
+  margin-top: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .swiper-pagination {
+    margin-top: 32px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  color: rgba(17, 17, 17, 0.1);
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 10px;
+  background: var(--orange);
+}
