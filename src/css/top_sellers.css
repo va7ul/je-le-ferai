@@ -1,6 +1,5 @@
 .top-sellers-section {
   background-color: var(--background);
-  margin-bottom: 72px;
 }
 
 .is-hidden-sellers {
@@ -80,7 +79,6 @@
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-    margin-bottom: 100px;
   }
 
   .top-sellers-img {
@@ -105,7 +103,6 @@
 @media screen and (min-width: 1200px) {
   .top-sellers-container {
     max-width: 1200px;
-    margin-bottom: 128px;
   }
 
   .is-hidden-sellers {
