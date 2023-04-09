@@ -1,9 +1,11 @@
 .containerr{
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
   .comment{
+    width: 100%;
   padding-bottom: 72px;
+  min-width: 375px;
   }
   .comment-title{
   font-weight: 600;
@@ -131,12 +133,10 @@ min-width: auto;
         padding-left: 15px;
         padding-right: 15px;
 }
-.swiper-slide{
-  display: block;
-  min-width: 335px;
-}
-
+.comment-item{
+  width: 100%;
   }
+}
   @media screen and (max-width: 767px ) {
     .containerr{
             width: 375px;
