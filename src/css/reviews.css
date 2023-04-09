@@ -1,9 +1,11 @@
 .containerr{
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
   .comment{
+    width: 100%;
   padding-bottom: 72px;
+  min-width: 375px;
   }
   .comment-title{
   font-weight: 600;
@@ -112,6 +114,7 @@ padding: 0;
     width: 13px;
     height: 13px;
     background: rgba(17, 17, 17, 0.1);
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px);
 
   }
   .mySwiper .swiper-pagination-bullet:active,
@@ -127,6 +130,9 @@ padding: 0;
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
+}
+.comment-item{
+  width: 100%;
 }
 
   }
