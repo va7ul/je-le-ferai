@@ -17,8 +17,8 @@
   text-align: center;
   max-width: 1136px;
   height: 600px;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   background-image: linear-gradient(
       180deg,
