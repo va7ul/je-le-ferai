@@ -2,7 +2,7 @@
   background-color: var(--background);
 }
 
-.is-hidden {
+.is-hidden-sellers {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
@@ -105,7 +105,7 @@
     max-width: 1200px;
   }
 
-  .is-hidden {
+  .is-hidden-sellers {
     visibility: visible;
     pointer-events: all;
     position: static;
