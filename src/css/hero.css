@@ -108,9 +108,9 @@
 }
 
 .scroll_icon {
-  width: 22px;
-  height: 22px;
-  color: var(--orange);
+	width: 22px;
+	height: 22px;
+	fill: var(--orange);
 }
 
 .scroll_button:hover,
@@ -119,11 +119,16 @@
   color: var(--orange);
 }
 
+.scroll_span:hover,
+.scroll_span:focus {
+	background-color: var(--orange); 
+}
 .scroll_icon:hover,
 .scroll_icon:focus {
   background-color: var(--orange);
   color: var(--white);
   /*box-shadow: 0 2px 6px rgba(252, 241, 224, 1);*/
+	fill: var(--white);
 }
 
 /*--------Mobile------------------*/
