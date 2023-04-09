@@ -31,6 +31,7 @@
 }
 
 .how-its-made-play {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,6 +207,10 @@
   }
   .how-its-made-video > img {
     height: 400px;
+  }
+
+  .how-its-made-video {
+    width: 600px;
   }
 
   /* .how-its-made-item {
