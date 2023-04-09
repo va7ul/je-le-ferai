@@ -81,6 +81,11 @@
     padding-right: 32px;
   }
 
+  .top-sellers-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
   .top-sellers-img {
     width: 344px;
   }
@@ -88,6 +93,7 @@
   .topsellers-photo-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
   }
 
   .top-sellers-section {
@@ -96,7 +102,7 @@
 
   .buy-now-btn {
     position: absolute;
-    transform: translate(565px, -120px);
+    transform: translate(583px, -120px);
   }
 }
 
@@ -120,7 +126,7 @@
   }
 
   .buy-now-btn {
-    transform: translate(945px, -35px);
+    transform: translate(979px, -35px);
   }
 
   .top-sellers-descr {
