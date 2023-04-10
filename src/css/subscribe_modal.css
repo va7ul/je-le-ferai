@@ -2,11 +2,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
 }
 
 .subscribe-backdrop.is-hidden {
@@ -17,6 +18,7 @@
 
 .subscribe-modal {
     position: absolute;
+    /* display: flex; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -24,9 +26,55 @@
     min-height: 350px;
     padding: 32px 24px;
     background-color: var(--white);
+    background-image: url(/img/pop-up-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 0 right 0;
     border-radius: 15px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-backdrop.is-hidden .subscribe-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .subscribe-modal {
+        background-image: url(/img/pop-up-mobile@2x.jpg);
+    }
+}
+
+.subscribe-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    stroke: var(--white);
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-btn-icon {
+    fill: var(--white);
+}
+
+.subscribe-modal-content {
+
+    /* display: flex; */
+
+    /* flex-wrap: wrap;
+    align-items: end; */
+
+    /* flex-direction: column;
+    justify-content: end; */
+
 }
 
 .subscribe-modal-title {
@@ -44,8 +92,16 @@
     .subscribe-modal {
         min-width: 538px;
         min-height: 412px;
+        background-image: url(/img/pop-up-desktop@1x.jpg);
     }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .subscribe-modal {
+            background-image: url(/img/pop-up-desktop@2x.jpg);
+        }
+    }
 }
 
 /* ----------Desktop---------- */
