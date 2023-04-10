@@ -60,6 +60,7 @@
       font-size: 14px;
       line-height: calc(17/14);
       color: var(--text);
+      letter-spacing: -0.02em;
   }
 
 }
@@ -103,8 +104,8 @@
 
   .advantages__item:not(:last-child) {
       position: relative; 
-      width: 326px;
-      padding-right: 18px;
+      width: 330px;
+      
       
 
   }
@@ -115,10 +116,10 @@
       content: "";
       position: absolute;
      
-      width: 1px;
-      right: 0;
+      right: -18px;
       height: 124px;
-      background: rgba(255, 255, 255 0,5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      
       top: 50%;
       transform: translate(-50%, -50%);
     }
