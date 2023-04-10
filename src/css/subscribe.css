@@ -24,7 +24,7 @@
 }
 
 .subscribe-title {
-    width: 290px;
+    max-width: 280px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 24px;
