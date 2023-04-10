@@ -122,10 +122,9 @@
 
 
 
-
 /*--------Mobile------------------*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 	.hero {
 		/*display: block;*/
 		max-width: 335px;
@@ -134,6 +133,7 @@
 
 	.hero_container {
 		width: 100%;
+		padding-right: 40px;
 		/*width: auto;
 		height: 72px;
 		font-size: 20px;
@@ -152,11 +152,10 @@
 		height: 41px;
 	}
 
-
-
 	.hero_top {
 		width: 100%;
 		margin-bottom: 32px;
+		display: flex;
 	}
 
 	.buy_now {
@@ -215,11 +214,11 @@
 		width: 704px;
 	}
 
-	.hero_container {
+	/*.hero_container {
 		/*width: 768px;
 		/*width: 100%;
-		padding-left: 40px;*/
-	}
+		padding-left: 40px;
+	}*/
 
 	.hero_top {
 		display: block;
@@ -229,6 +228,7 @@
 	.hero_buttons {
 		/*height: 45px;*/
 		flex-direction: row;
+		
 	}
 
 	.how_made {
