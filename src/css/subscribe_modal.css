@@ -1,0 +1,176 @@
+.subscribe-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+}
+
+.subscribe-backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.subscribe-modal {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 310px;
+    min-height: 350px;
+    padding: 32px 24px;
+    background-color: var(--white);
+    background-image: url(/img/pop-up-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 0 right 0;
+    border-radius: 15px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-backdrop.is-hidden .subscribe-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .subscribe-modal {
+        background-image: url(/img/pop-up-mobile@2x.jpg);
+    }
+}
+
+.subscribe-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    stroke: var(--white);
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-modal-btn-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.subscribe-modal-btn:hover,
+.subscribe-modal-btn:focus {
+    background-color: var(--pale-yellow);
+    border: 50%;
+}
+
+.subscribe-modal-btn:hover,
+.subscribe-modal-btn:focus .subscribe-modal-btn-icon {
+    stroke: var(--orange);
+}
+
+.subscribe-modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.subscribe-modal-title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.subscribe-modal-title span {
+    color: var(--orange);
+}
+
+.subscribe-modal-form-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: start;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.subscribe-modal-form-input {
+    padding: 14px 18px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 25px;
+    outline: none;
+}
+
+.subscribe-modal-form-btn {
+    padding: 14px 18px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    transform: translateX(-50%);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-modal-form-btn:hover,
+.subscribe-modal-form-btn:focus {
+    color: var(--orange);
+    background-color: var(--pale-yellow);
+}
+
+/* ----------Tablet---------- */
+
+@media screen and (min-width:768px) {
+
+    .subscribe-modal {
+        min-width: 538px;
+        min-height: 412px;
+        padding: 40px;
+        background-image: url(/img/pop-up-desktop-tablet@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .subscribe-modal {
+            background-image: url(/img/pop-up-desktop-tablet@2x.jpg);
+        }
+    }
+
+    .subscribe-modal-btn {
+        padding: 8px;
+    }
+
+    .subscribe-modal-btn-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .subscribe-modal-title {
+        margin-bottom: 28px;
+    }
+
+    .subscribe-modal-form-btn {
+        padding: 17px 40px;
+        margin-left: 8px;
+        transform: translateX(0);
+    }
+
+    .subscribe-modal-form-input {
+        width: 312px;
+    }
+
+}
+
+/* ----------Desktop---------- */
+
+@media screen and (min-width:1200px) {}
