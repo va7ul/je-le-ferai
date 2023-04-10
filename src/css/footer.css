@@ -10,7 +10,6 @@
     background-color: rgba(30, 24, 35, 1);
   }
   .footer-logo {
-    width: 300px;
     margin-bottom: 32px;
   }
   .footer-text {
@@ -58,7 +57,8 @@
     margin-right: auto;
   }
   .footer {
-    padding: 50px 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: rgba(30, 24, 35, 1);
   }
   .footer-anchor-list {
@@ -84,6 +84,7 @@
   }
 
   .footer-logo {
+    width: 300px;
     margin-bottom: 0;
   }
   .footer-container {
@@ -104,16 +105,22 @@
     margin-right: auto;
   }
   .footer {
-    padding: 50px 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: rgba(30, 24, 35, 1);
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer-pagination {
     display: flex;
-    column-gap: 543px;
+    column-gap: 530px;
   }
   .footer-wrap {
     column-gap: 65px;
+  }
+  .footer-logo {
+    width: 300px;
   }
 }
 
@@ -201,7 +208,6 @@
   }
 
   .footer-logo {
-    width: 300px;
     margin-bottom: 32px;
   }
   .footer-text {
