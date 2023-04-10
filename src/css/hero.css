@@ -118,6 +118,14 @@
 	fill: var(--white);
 }
 
+/* ---------------------------MODAL WINDOW---------------------------- */
+
+
+
+
+
+
+
 /*--------Mobile------------------*/
 
 @media screen and (min-width:320px) and (max-width:768px) {
@@ -206,7 +214,7 @@
 
 /*--------Tablet------------------*/
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px)  {
 	.hero_container {
 		width: 100%;
 	}
