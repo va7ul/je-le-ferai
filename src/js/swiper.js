@@ -5,6 +5,7 @@ const swiper = new Swiper('.productsSwiper', {
     slidesPerView: "auto",
     freeMode: true,
     spaceBetween: 18,
+    grabCursor: true,
 
   // If we need pagination
   pagination: {
