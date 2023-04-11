@@ -102,13 +102,18 @@
 
   .buy-now-btn {
     position: absolute;
-    transform: translate(583px, -120px);
+    transform: translate(583px, -90px);
+  }
+
+  .topsellers-photo-list-item-one {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .top-sellers-container {
     max-width: 1200px;
+    padding-bottom: 70px;
   }
 
   .is-hidden-sellers {
@@ -126,7 +131,7 @@
   }
 
   .buy-now-btn {
-    transform: translate(979px, -35px);
+    transform: translate(979px, -2px);
   }
 
   .buy-now-btn:hover {
