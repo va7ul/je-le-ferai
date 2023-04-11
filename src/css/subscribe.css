@@ -1,6 +1,7 @@
 .subscribe {
     padding-top: 64px;
     padding-bottom: 64px;
+    margin: 0 auto;
     background-image: url(/img/subcribe-mobile@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
