@@ -116,8 +116,8 @@
   
     .input-insert {
       position: absolute;
-      top: 50%;
-      left: 18px;
+      top: 54%;
+      left: 41px;
       transform: translateY(-50%);
       width: 74px;
       font-weight: 500;
@@ -179,7 +179,7 @@
     color: var(--white);
     background-color: var(--orange);
     border-radius: 100px;
-    transition: color var(--transition-dur-and-func), background var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
   }
   .form-btn {
     display: flex;
@@ -231,6 +231,11 @@
       margin-right: 0;
     } 
     .modal-form {
+      display: flex;
+      flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
       gap: 19px;
     }
     
@@ -260,8 +265,8 @@
     }
       .input-insert {
         position: absolute;
-        top: 50%;
-        left: 18px;
+        top: 54%;
+        left: 65px;
         transform: translateY(-50%);
         width: 125px;
         font-size: 18px;
@@ -269,9 +274,10 @@
       }
   
       .form-flag {
-        /* display: flex;
+        display: flex;
         align-items: center;
-        padding: 3.5px 0; */
+        padding: 3.5px 0;
+
         gap: 18px;
         border-right: 1.5px solid rgba(0, 0, 0, 0.1);
         box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
@@ -301,7 +307,16 @@
     
     .btn {
       cursor: pointer;
+      color: var(--white);
+    background-color: var(--orange);
+    border-radius: 100px;
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+    border:none
+    
     }
+
+
+
     .form-btn {
       padding: 14px 40px;
       width: 117px;
