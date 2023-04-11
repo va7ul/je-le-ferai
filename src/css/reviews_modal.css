@@ -193,7 +193,7 @@
   .form-btn:is(:hover, :focus) {
     color: var(--orange);
     background-color: var(--pale-yellow);
-   }
+   } }
   
   /* MODAL-WINDOW TABLET+DESKTOP */
   
@@ -313,4 +313,4 @@
       background-color: var(--pale-yellow);
      }
     
-    }}
+    }
