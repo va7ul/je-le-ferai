@@ -29,6 +29,11 @@
     letter-spacing: -0.02em;
 }
 
+.components-img {
+    width: 224px;
+    height: 171px;
+}
+
 .components-list {
     display: flex;
     flex-direction: column;
@@ -174,8 +179,6 @@
     letter-spacing: -0.02em;
 }
 
-/* ---------- min-width: 768px ---------- */
-
 @media screen and (min-width: 768px) {
     
     .components-box {
@@ -226,8 +229,6 @@
 
 }
 
-/* ----------  min-width: 1200px ---------- */
-
 @media screen and (min-width: 1200px) {
 
      .components-list {
@@ -235,6 +236,11 @@
         justify-content: center;
         flex-wrap: nowrap;
         gap: 19px;
+    }
+
+    .components-img {
+        width: 206px;
+        height: 160px;
     }
 
     .components-box {
@@ -252,5 +258,4 @@
     .nuts-box {
         order: 0;
     }
-
 }
