@@ -14,8 +14,12 @@
 	background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero-bg-mobile@1x.jpg);
 }
 
+.zagolovok {
+	visibility: hidden;
+}
+
 .hero_section {
-	margin-bottom: 72px;
+	padding-bottom: 72px;
 }
 
 @media screen and (min-device-pixel-ratio:2),
@@ -38,6 +42,7 @@
 }
 
 .hero_button {
+	cursor: pointer;
 	border: none;
 	padding: 12px 14px;
 	font-size: 13px;
@@ -46,6 +51,13 @@
 	border-radius: 100px;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	height: 100%;
+}
+
+.hero_button:hover,
+.hero_button:focus {
+	background-color: rgba(252, 241, 224, 1);
+	color: var(--orange);
+	/*box-shadow: 0 2px 6px rgba(252, 241, 224, 1);*/
 }
 
 .buy_now:hover,
@@ -73,19 +85,16 @@
 }
 
 .scroll_button {
-	font-weight: 500;
-	letter-spacing: -0.03em;
-	color: #FFFFFF;
-	background-color: inherit;
-	margin-right: 12px;
-	border: none;
-}
-
-.scroll {
 	display: flex;
 	align-items: center;
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	color: var(--white);
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 0.3s ease;
 }
-
 .scroll_span {
 	width: 28px;
 	height: 28px;
@@ -94,30 +103,29 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	transition: all 0.3s ease;
 }
-
 .scroll_icon {
 	width: 16px;
 	height: 16px;
 	fill: var(--orange);
+	transition: all 0.3s ease;
 }
-
 .scroll_button:hover,
 .scroll_button:focus {
-	background-color: var(--white);
 	color: var(--orange);
 }
-
-.scroll_span:hover,
-.scroll_span:focus {
+.scroll_button span:first-child {
+	width: 78px;
+	font-size: 14px;
+	margin-right: 14px;
+}
+.scroll_button:hover .scroll_span ,
+.scroll_button:focus .scroll_span{
 	background-color: var(--orange);
 }
-
-.scroll_icon:hover,
-.scroll_icon:focus {
-	background-color: var(--orange);
-	color: var(--white);
-	/*box-shadow: 0 2px 6px rgba(252, 241, 224, 1);*/
+.scroll_button:hover .scroll_icon,
+.scroll_button:focus .scroll_icon {
 	fill: var(--white);
 }
 
@@ -185,11 +193,12 @@
 		flex-direction: row;
 	}
 
+	/*
 	.scroll_button {
 		margin-right: 14px;
 		width: 80px;
 		height: 18px;
-	}
+	}*/
 
 	.scroll_span {
 		width: 38px;
