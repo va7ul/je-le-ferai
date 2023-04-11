@@ -1,7 +1,8 @@
 
   .comment{
+    padding-top: 72px;
     width: auto;
-    padding-top: 128px;
+    
   padding-bottom: 72px;
 
   }
@@ -160,6 +161,7 @@ width: 100%;
 }
 @media screen and (min-width: 768px ){
     .containerr{
+      padding-top: 100px;
         max-width: 734px;
         padding-left: 15px;
         padding-right: 15px;
@@ -179,6 +181,7 @@ width: 100%;
 }
 @media screen and (min-width: 1200px ){
     .containerr{
+      padding-top: 128px;
         max-width: 1166px;
       margin: auto;
       }
