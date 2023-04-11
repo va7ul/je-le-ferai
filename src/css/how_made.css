@@ -26,6 +26,8 @@
 
 .how-its-made-video {
   position: relative;
+  width: 335px;
+  height: 500px;
 }
 
 .how-its-made-play {
@@ -134,6 +136,11 @@
     margin-bottom: 50px;
   }
 
+  .how-its-made-video {
+    width: 614px;
+    height: 400px;
+  }
+
   .how-its-made-description {
     font-family: 'Montserrat';
     font-style: normal;
@@ -185,6 +192,7 @@
   .how-its-made-video {
     margin-bottom: 0;
     margin-right: 20px;
+    width: 600px;
   }
 
   .how-its-made-list {
