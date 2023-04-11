@@ -17,10 +17,10 @@
 .zagolovok {
 	visibility: hidden;
 }
-
+/*
 .hero_section {
 	padding-bottom: 72px;
-}
+}*/
 
 @media screen and (min-device-pixel-ratio:2),
 (-webkit-min-device-pixel-ratio:2),
