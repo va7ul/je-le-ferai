@@ -70,13 +70,13 @@
 
 @media screen and (min-width: 375px) {
   .top-sellers-container {
-    max-width: 375px;
+    width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .top-sellers-container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -112,7 +112,7 @@
 
 @media screen and (min-width: 1200px) {
   .top-sellers-container {
-    max-width: 1200px;
+    width: 1200px;
     padding-bottom: 70px;
   }
 
@@ -123,7 +123,7 @@
   }
 
   .top-sellers-img {
-    width: 344px;
+    width: 368px;
   }
 
   .topsellers-photo-list {
