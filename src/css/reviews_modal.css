@@ -5,12 +5,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 100;
+    
     top: 0;
     left: 0;
     transition: opacity 0.35s linear, visibility 0.35s linear;
   }
-  .modal-rev {
+  .modal {
     width: 311px;
     padding: 32px 24px;
     position: fixed;
@@ -194,6 +194,7 @@
     color: var(--orange);
     background-color: var(--pale-yellow);
    }
+  }
   
   /* MODAL-WINDOW TABLET+DESKTOP */
   
@@ -313,4 +314,4 @@
       background-color: var(--pale-yellow);
      }
     
-    }}
+    }
