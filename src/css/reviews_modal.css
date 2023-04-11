@@ -10,7 +10,7 @@
     left: 0;
     transition: opacity 0.35s linear, visibility 0.35s linear;
   }
-  .modal {
+  .modal-rev {
     width: 311px;
     padding: 32px 24px;
     position: fixed;
@@ -218,12 +218,12 @@
     
     .modal-title {
       width: 298px;
-      /* font-weight: 600; */
+      font-weight: 600;
       font-size: 24px;
       line-height: 1.17;
-      /* letter-spacing: -0.03em;
+      letter-spacing: -0.03em;
       text-transform: uppercase;
-      color: var(--black); */
+      color: var(--black);
       margin-bottom: 40px;
     }
      
