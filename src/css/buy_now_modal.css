@@ -1,14 +1,14 @@
 
 
 .wrapper {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     
-    width: inherit;
-    height: 100%;
-    z-index: 1;
-  
+    
+    
+    z-index: 10;
+    
      
   
     background-color: rgba(0, 0, 0, 0.5);
@@ -26,10 +26,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    z-index: 1000;
-    
+    z-index: 11;
 
-    background-color: var(--white);
+
+    background-color: #FAFAFA;
  
     border-radius: 4px;
 
@@ -37,34 +37,59 @@
     transition: transform 0.35s linear;
 }
 
+   
 
 
 .wrapper.is-hidden .menu-order {
     transform: translate(-50%, -50%) scale(0);
   }
 
-  .form-input-buy:optional,
-  .form-input:optional {
-    border-color: gray;
-  }
+  
 
 .form-input-buy:invalid:focus,
-    .form-input:invalid:focus {
+    .form-input-b:invalid:focus {
 
         border-color: red;
     }
 
+    .form-input-b,
+    .form-input-buy,
+    .form-comment {
+
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 14px 18px;
+
+        font-size: 18px;
+        line-height: calc(18/14);
+
+        color: var(--black);
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+    }
+
+    .form-input-b:focus,
+    .form-input-buy:focus,
+    .form-comment:focus {
+        border: 1.5px solid var(--orange);
+        outline: none;
+    }
+
  
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
 
     .wrapper {
         width: 100%;
+        height: 100%;
+
         
     }
 
     .container-menu {
-        width: 311px;
+       min-width: 311px;
+       max-height: calc(100vh - 50px);
+       overflow-y: auto;
        
         padding-top: 32px;
         padding-left: 24px;
@@ -72,6 +97,10 @@
         padding-bottom: 32px;
         margin-left: auto;
         margin-right: auto;
+
+       
+        
+        
         
 
     }
@@ -91,7 +120,7 @@
         height: 42px;
 
         border: 0;
-        background-color: var(--white);
+        background-color: #FAFAFA;
         margin: 0;
         padding: 0;
         transform: scale(1);
@@ -108,6 +137,7 @@
     }
 
     .mobile-close-icon {
+        stroke: var(--black);
         fill: var(--black);
         width: 24px;
         height: 24px;
@@ -116,6 +146,7 @@
     }
 
     .menu-order__close:is(:hover, :focus) .mobile-close-icon {
+        stroke: var(--orange);
         fill: var(--orange);
     }
 
@@ -145,15 +176,15 @@
     .menu-order__card {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; 
 
         width: 263px;
         padding: 8px 16px;
 
 
 
-        background-color: var(--white);
-        border: 1px solid var(--white);
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(17, 17, 17, 0.1);
         border-radius: 15px;
 
 
@@ -211,7 +242,7 @@
     }
 
     .form-input-buy,
-    .form-input,
+    .form-input-b,
     .form-comment {
         border-radius: 13px;
         min-height: 66px;
@@ -231,24 +262,10 @@
     }
 
 
-
-    .form-input-buy,
-    .form-comment {
-
-        display: block;
-        width: 100%;
-        margin: 0;
-        padding: 14px 18px;
-
-        font-size: 18px;
-        line-height: calc(18/14);
-
-        color: var(--black);
-        border: 1.5px solid rgba(17, 17, 17, 0.05);
-    }
+    
 
     .form-comment {
-        height: 137px;
+        max-height: 91px;
         resize: none;
         border: none;
     }
@@ -316,12 +333,13 @@
 
 
     .container-menu {
-        width: 609px;
-       
+        min-width: 609px;
+        
         padding-top: 48px;
         padding-left: 48px;
         padding-right: 48px;
         padding-bottom: 48px;
+       
 
     }
 
@@ -401,13 +419,19 @@
         gap: 21px;
     }
 
-    .menu-order__email .form-input,
-    .menu-order__phone .form-input,
-    .menu-order__credit .form-input,
-    .menu-order__comment .form-input {
+    .menu-order__email .form-input-b,
+    .menu-order__phone .form-input-b,
+    .menu-order__credit .form-input-b,
+    .menu-order__comment .form-input-b {
         width: 100%;
     }
+    
 
+    .form-comment {
+        min-height: 137px;
+        resize: none;
+        border: none;
+    }
 
 }
 
@@ -459,4 +483,7 @@
 
 .menu-order__submit span:nth-child(4) {
     --n: 4;
+}
+.w3-button {
+    display: none;
 }
