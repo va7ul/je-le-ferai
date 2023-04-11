@@ -1,6 +1,5 @@
 .how-its-made {
   padding-top: 72px;
-  /* padding-bottom: 72px; */
 }
 
 .how-its-made > .container {
@@ -10,7 +9,6 @@
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
-  /* max-width: 335px; */
 }
 
 .how-its-made-title {
@@ -123,7 +121,6 @@
 @media screen and (min-width: 768px) {
   .how-its-made {
     padding-top: 100px;
-    /* padding-bottom: 100px; */
   }
   .how-its-made > .container {
     max-width: 768px;
@@ -177,7 +174,6 @@
 @media screen and (min-width: 1200px) {
   .how-its-made {
     padding-top: 128px;
-    /* padding-bottom: 128px; */
   }
 
   .how-its-made > .container {
@@ -198,7 +194,6 @@
   .how-its-made-wrapper {
     display: flex;
     flex-direction: row;
-    /* width: 1136px; */
   }
 
   .how-its-made-container {
@@ -213,10 +208,6 @@
     width: 600px;
   }
 
-  /* .how-its-made-item {
-    font-style: 13px;
-  } */
-
   .how-its-made-description {
     width: 350px;
   }
@@ -227,18 +218,3 @@
 }
 
 /* -------------------/desktop-------------------- */
-
-/*  - mobile: верстка гумова, стає адаптивною на 375px;
-      - tablet: 768px;
-      - desktop: 1200px 
-  
-  :root {
-    --orange: #fd9222;
-    --pale-yellow: #fcf1e0;
-    --white: #ffffff;
-    --accent-color: #1e1823;
-    --black: #111111;
-  
-    --text: rgba(255, 255, 255, 0.7); 
-  }
-  */
