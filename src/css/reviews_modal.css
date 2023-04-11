@@ -116,8 +116,8 @@
   
     .input-insert {
       position: absolute;
-      top: 50%;
-      left: 18px;
+      top: 54%;
+      left: 41px;
       transform: translateY(-50%);
       width: 74px;
       font-weight: 500;
@@ -180,7 +180,7 @@
     color: var(--white);
     background-color: var(--orange);
     border-radius: 100px;
-    transition: color var(--transition-dur-and-func), background var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
   }
   .form-btn {
     display: flex;
@@ -238,8 +238,10 @@
     .modal-form {
       display: flex;
       flex-direction: column;
+
       align-items: flex-start;
       padding: 0px;
+
       gap: 19px;
     }
    
@@ -284,8 +286,8 @@
     }
       .input-insert {
         position: absolute;
-        top: 50%;
-        left: 18px;
+        top: 54%;
+        left: 65px;
         transform: translateY(-50%);
         width: 125px;
         font-size: 18px;
@@ -342,8 +344,15 @@
       border-radius: 100px;
       transition: color var(--transition-dur-and-func), background var(--transition-dur-and-func);
       cursor: pointer;
-      border-color: transparent;
+      color: var(--white);
+    background-color: var(--orange);
+    border-radius: 100px;
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+   
     }
+
+
+
     .form-btn {
       padding: 14px 40px;
       width: 117px;
