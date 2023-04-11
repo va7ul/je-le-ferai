@@ -1,4 +1,12 @@
+/* Our products (Василь Подвірний) */
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .our-products-container {
+        padding-right: 0;
+    }
+}
+
 .our-products-title {
+    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -62,6 +70,7 @@
     border-radius: 100px;
     padding: 8px 20px;
     margin-top: 18px;
+    cursor: grab;
 }
 
 .our-products-item.swiper-slide {
@@ -79,3 +88,5 @@
         width: 270px;
     }
 }
+
+/* Our products*/

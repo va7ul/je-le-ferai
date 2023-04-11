@@ -1,22 +1,19 @@
 
+.add {
+    
+    background-color: #1e1823;
+    color: var(--text);
 
-@media screen and (min-width: 375px) {
-
-  .container-advantages {
-      
-      width: 375px;
-      max-width: 375px;
-      
-      padding: 20px;
-
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #1e1823;
-      color: var(--text);
-
-  }
+}
 
 
+@media screen and (min-width: 320px) {
+
+  
+   
+ 
+    
+  
 
   .advantages__icon {
       width: 62px;
@@ -27,22 +24,25 @@
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 365px;
       margin-bottom: 22px;
+    
+      
   }
   
   .advantages__list {
+    padding-bottom: 20px;
+    padding-top: 20px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+      
   }
   
   .advantages__item {
-      width: 308px;
+      
       max-width: 308px;
   }
 
-  .advantages__icon {
-      fill: var(--orange)
-  }
+
 
   .advantages__label {
 
@@ -61,23 +61,26 @@
       font-size: 14px;
       line-height: calc(17/14);
       color: var(--text);
+      letter-spacing: -0.02em;
   }
 
 }
 
 @media screen and (min-width: 768px) {
 
+    
 
-
-  .container-advantages {
+  .add{
        
+      
       width: 768px;
-      max-width: 768px;
-      padding: 50px 32px;
+      min-width: 768px;
+      
   }
   
   .advantages__list {
-      
+    padding-bottom: 50px;
+    padding-top: 50px;
       flex-wrap: wrap;
       flex-direction: row;
       gap: 32px;
@@ -88,15 +91,11 @@
 
 @media screen and (min-width: 1200px) {
 
-  .container-advantages {
-
-      width: 1200px;
-      max-width: 1200px;
-      padding: 50px;
-  }
+   
 
   .advantages__list {
-    
+    padding-bottom: 50px;
+    padding-top: 50px;
     justify-content: space-between;
       
       
@@ -104,8 +103,8 @@
 
   .advantages__item:not(:last-child) {
       position: relative; 
-      width: 326px;
-      padding-right: 18px;
+      width: 330px;
+      
       
 
   }
@@ -116,10 +115,10 @@
       content: "";
       position: absolute;
      
-      width: 1px;
-      right: 0;
+      right: -18px;
       height: 124px;
-      background: rgba(255, 255, 255 0,5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      
       top: 50%;
       transform: translate(-50%, -50%);
     }

@@ -1,40 +1,41 @@
 
-<div class="backdrop is-hidden" data-modal>
 
 
-<div class="menu-order" data-modal>
-    <div class="container-menu">
-      <button data-modal-close type="button" class="menu-order__close">
-        <svg class="mobile-close-icon" width="12" height="12">
-          <use href="./images/icons22222/symbol-defs.svg#icon-close"></use>
+
+<div class="wrapper is-hidden" data-modal-buy id="data-modal-buy">
+    <div class="container-menu menu-order" data-modal-buy>
+      <button type="button" class="menu-order__close" data-modal-buy-closem>
+        <svg class="mobile-close-icon" data-modal-buy-close width="12" height="12">
+          <use href="/img/sprite.svg#icon-x"></use>
         </svg>
       </button>
       <h2 class="menu-order__label">
         <span class="menu-order__label-buy">BUY</span> NOW </h2>
   
-  
+        <span onclick="document.getElementById('data-modal-buy').style.display='none'" 
+        class="w3-button w3-display-topright"></span>
   
   
       <ul class="menu-order__list">
         <li class="menu-order__item">
           <div class="menu-order__card">
-            <img srcset="./img/buy-now-1-mobile@1x.png 1x, ./img/buy-now-1-desktop-tablet@2x.png 2x" 
-            src="../img/buy-now-1-mobile@1x.png" alt="chocolate" width="" class="img-mo"/>
+            <img srcset="/img/buy-now-1-mobile@1x.png 1x, /img/buy-now-1-mobile@2x.png 2x" 
+            src="/img/buy-now-1-desktop-tablet@1x.png" alt="chocolate" width="84" class="img-mo"/>
             <button class="menu-order__value" type="button">100 g</button>
           </div>
         </li>
         <li class="menu-order__item">
           <div class="menu-order__card">
-            <img srcset="./img/buy-now-2-mobile@1x.png 1x, ./img/buy-now-2-desktop-tablet@2x.png 2x"
-            src="../img/buy-now-2-mobile@1x.png" alt="chocolatewhiteblack" width="" class="img-mo" />
-            <button class="menu-order__value" type="button">100 g</button>
+            <img srcset="/img/buy-now-2-mobile@1x.png 1x, /img/buy-now-2-mobile@2x.png 2x"
+            src="/img/buy-now-2-desktop-tablet@1x.png" alt="chocolatewhiteblack" width="84" class="img-mo" />
+            <button class="menu-order__value" type="button">200 g</button>
           </div>
         </li>
         <li class="menu-order__item">
           <div class="menu-order__card">
-            <img srcset="./img/buy-now-3-mobile@1x.png 1x, ./img/buy-now-3-desktop-tablet@2x.png 2x" 
-            src="../img/buy-now-3-mobile@1x.png" alt="chocolateplate" width="" class="img-mo"/>
-            <button class="menu-order__value" type="button">100 g</button>
+            <img srcset="/img/buy-now-3-mobile@1x.png 1x, /img/buy-now-3-mobile@2x.png 2x" 
+            src="/img/buy-now-3-desktop-tablet@1x.png" alt="chocolateplate" width="84" class="img-mo"/>
+            <button class="menu-order__value" type="button">300 g</button>
           </div>
         </li>
       </ul>
@@ -45,27 +46,27 @@
               <label for="name" class="form-label">Personal information</label>
   
                 <div class="input"> 
-                <input type="text" name="name" id="name" class="form-input" placeholder="Name">
-              <!-- <label for="surname" class="form-label"></label>    -->
-                <input type="text" name="surname" id="surname" class="form-input" placeholder="Surname"></div> </div>
+                <input type="text" name="name" id="name" class="form-input-buy" placeholder="Name" required>
+           
+                <input type="text" name="surname" id="surname" class="form-input-buy" placeholder="Surname" required></div> </div>
   
           <div class="menu-order__email">
             <label for="email" class="form-label">Email</label>
-            <input type="email" name="email" id="email" class="form-input" placeholder="Enter your email">
+            <input type="email" name="email" id="email" class="form-input-b" placeholder="Enter your email" required>
             </div>      
   
           <div class="menu-order__phone">
             <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone number"> 
+            <input type="tel" name="phone" id="phone" class="form-input-b pn" placeholder="Phone number" required> 
           </div>  
            
         <div class="menu-order__credit">
           <label for="credit" class="form-label">Card number</label>
-         <input id="credit" name="credit" id="credit" class="form-input" placeholder="Enter card">
+         <input id="credit" name="credit" id="credit" class="form-input-b" placeholder="Enter card" maxLength="16" required>
   
-         <!-- <svg class="menu-order__form-icon" width="22" height="13">
-          <use href="./images/icons/symbol-defs#icon-mastercard"> </use>
-         </svg> -->
+         <svg class="menu-order__form-icon" width="22" height="13">
+          <use href="./img/sprite.svg#mastercard-opt"> </use>
+         </svg>
          
         </div>
    
@@ -74,10 +75,19 @@
                   <textarea name="user-comment" id="message" class="form-comment" placeholder="Enter text"></textarea>
                 </div>
   
-      <button type="submit" class="menu-order__submit">Submit</button>
+      <button type="submit" class="menu-order__submit">Submit <span></span><span></span><span></span><span></span> </button>
       </form>
   
-       
+    <script>
+
+        var modal = document.getElementById ('data-modal-buy');
+
+        window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+    </script>
   
     </div>
   </div>
