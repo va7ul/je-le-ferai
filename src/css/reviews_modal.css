@@ -5,7 +5,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 100;
+    
     top: 0;
     left: 0;
     transition: opacity 0.35s linear, visibility 0.35s linear;
@@ -193,7 +193,9 @@
   .form-btn:is(:hover, :focus) {
     color: var(--orange);
     background-color: var(--pale-yellow);
+
    } }
+
   
   /* MODAL-WINDOW TABLET+DESKTOP */
   
@@ -218,12 +220,12 @@
     
     .modal-title {
       width: 298px;
-      /* font-weight: 600; */
+      font-weight: 600;
       font-size: 24px;
       line-height: 1.17;
-      /* letter-spacing: -0.03em;
+      letter-spacing: -0.03em;
       text-transform: uppercase;
-      color: var(--black); */
+      color: var(--black);
       margin-bottom: 40px;
     }
      
