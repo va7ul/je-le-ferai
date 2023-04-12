@@ -258,9 +258,6 @@ align-items: center;
 transform: none;
 margin-left: 190px;
 }
-.header-nav-wrap.is-open {
-display: none;
-}
 
 .header-navigation {
 position: static;
