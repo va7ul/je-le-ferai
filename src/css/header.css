@@ -254,20 +254,10 @@
     display: none;
   }
 
-.header-nav-wrap {
-width: 100%;
-background-color: transparent;
-max-width: unset;
-height: unset;
-position: static;
-padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-transform: none;
-margin-left: 190px;
-}
+
+  .header-nav-wrap.js-menu-container {
+    display: none;
+  }
 
   .header-nav-wrap {
     width: 100%;
