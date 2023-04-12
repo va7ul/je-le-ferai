@@ -131,10 +131,6 @@ body {
   .section {
     padding-top: 128px;
   }
-
-  body.modal-open {
-  overflow: visible;
-    }
 }
 
 /* SWIPER */
