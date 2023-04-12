@@ -61,8 +61,8 @@
         margin: 0;
         padding: 14px 18px;
 
-        font-size: 18px;
-        line-height: calc(18/14);
+        font-size: 14px;
+        line-height: calc(17/14);
 
         color: var(--black);
         border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -217,6 +217,8 @@
 
     .menu-order__form {
 
+      
+
         color: var(--black);
         font-size: 12px;
         font-weight: 500;
@@ -283,13 +285,16 @@
         outline: none;
     }
 
-
+    .form-input-b {
+        position: relative;
+    }
 
 
     .menu-order__form-icon {
+        display: none;
         position: absolute;
-        top: 753px;
-        right: 77px;
+        top: 838px;
+        right: 36px;
         width: 32px;
         height: 21px;
         border-radius: 4px;
@@ -319,8 +324,15 @@
         color: var(--orange);
     }
 
+   
+  
 
-
+    
+    .form-comment::placeholder,
+    .form-input-buy::placeholder,
+    .form-input-b::placeholder {
+        color: rgba(64, 64, 64, 0.3);
+    }
 
 }
 
@@ -334,11 +346,11 @@
 
     .container-menu {
         min-width: 609px;
-        
         padding-top: 48px;
         padding-left: 48px;
         padding-right: 48px;
         padding-bottom: 48px;
+       
        
 
     }
@@ -393,6 +405,7 @@
 
     .menu-order__form {
 
+       
         font-size: 18px;
         line-height: calc(18/14);
 
@@ -400,11 +413,21 @@
     }
 
     .form-comment::placeholder,
-    .form-input-buy::placeholder {
+    .form-input-buy::placeholder,
+    .form-input-buy,
+    .form-input-b,
+    .form-comment {
 
         font-size: 18px;
         line-height: calc(22/18);
 
+    }
+
+    
+    .form-comment::placeholder,
+    .form-input-buy::placeholder,
+    .form-input-b::placeholder {
+        color: rgba(64, 64, 64, 0.3);
     }
 
 
@@ -426,11 +449,21 @@
         width: 100%;
     }
     
-
+    .form-label,
+    .label-comment {
+        font-size: 14px;
+        line-height: calc(18/14);
+    }
+    
+    
     .form-comment {
         min-height: 137px;
         resize: none;
         border: none;
+    }
+    
+    .menu-order__form-icon{
+        display: none;
     }
 
 }
@@ -444,7 +477,7 @@
     color: var(--white);
     z-index: 1;
     transition: 0.5s;
-    margin: 1em;
+    margin: 0;
 
     
 }
