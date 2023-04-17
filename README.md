@@ -6,13 +6,15 @@
 
 Команда Je le ferai
 
-Ірина Толкачова (team-lead, hero)
-Василь Подвірний (scrum-master, our products)
-Ольга Мороз (header, modal leave a review, mobile menu)
-Олексій Петров (advantages, modal buy now)
-Юлія Воронцова (unique components)
-Ігор Медведєв (how it`s made)
-Ксенія Косенко (top sellers)
-Михайло Когут (reviews)
-Маргарита Олексенко (subscribe, modal subscribe)
-Юлія Вакульчук (footer)
+
+Команда Je le ferai
+  1. Ірина Толкачова (team-lead, hero)
+  2. Василь Подвірний (scrum-master, our products)
+  3. Ольга Мороз (header, modal leave a review, mobile menu)
+  4. Олексій Петров (advantages, modal buy now)
+  5. Юлія Воронцова (unique components)
+  6. Ігор Медведєв (how it`s made)
+  7. Ксенія Косенко (top sellers)
+  8. Михайло Когут (reviews)
+  9. Маргарита Олексенко (subscribe, modal subscribe)
+  10. Юлія Вакульчук (footer)
