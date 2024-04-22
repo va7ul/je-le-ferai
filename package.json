@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/group-project-13-je-le-ferai/",
+    "build": "vite build --base=/je-le-ferai/",
     "preview": "vite preview"
   },
   "devDependencies": {
